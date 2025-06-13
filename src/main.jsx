@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+// import './index.css'
 // import AppContact from './AppContact'
 import AppTravel from './AppTravel'
 import AppTurtles from './AppTurtles'
@@ -11,6 +11,7 @@ import AppClick from './AppClick'
 import AppState from './changeState'
 import StateCount from './stateCount'
 import AppTernary from './AppTernary'
+import TeamMember from '../Solo_projects/Card_Generator/TeamMember'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -23,7 +24,7 @@ createRoot(document.getElementById('root')).render(
     <Form/> */}
     {/* <AppState/> */}
     {/* <StateCount/> */}
-    <AppTernary/>
-   
+    {/* <AppTernary/> */}
+    <TeamMember/>
   </StrictMode>,
 )

@@ -1,4 +1,4 @@
-import './stateCount.css'
+import  styles from './stateCount.module.css'
 import React from "react"
 
 export default function StateCount() {

@@ -1,0 +1,56 @@
+ Challenge: "Team Profile Card Generator"
+Goal: Build a small React app that displays a list of team members using props.
+
+💡 Features:
+A TeamMember component that receives props: name, role, profilePic, and bio.
+
+A parent Team component that maps over an array of team member objects and renders multiple TeamMember components.
+
+Optional: Add a button to toggle showing the bio or not (just to mix in state later).
+
+🧱 Component Structure:
+nginx
+Copy
+Edit
+App
+└── Team
+    ├── TeamMember (name="Dixon" role="Frontend Dev" ...)
+    ├── TeamMember (...)
+🧑‍💻 Sample Data:
+js
+Copy
+Edit
+const teamData = [
+  {
+    name: "Dixon Tusiime",
+    role: "Frontend Developer",
+    profilePic: "https://via.placeholder.com/150",
+    bio: "Loves building user interfaces and learning React!"
+  },
+  {
+    name: "Asha Nabirye",
+    role: "Backend Developer",
+    profilePic: "https://via.placeholder.com/150",
+    bio: "Node.js wizard and API master."
+  },
+  {
+    name: "Ben Ouma",
+    role: "UI/UX Designer",
+    profilePic: "https://via.placeholder.com/150",
+    bio: "Passionate about clean design and user experience."
+  }
+];
+🧩 What You’ll Practice:
+Passing props (name, role, bio, etc.)
+
+Reusable components
+
+Mapping over arrays
+
+Basic styling (optional)
+
+✅ Bonus:
+Add a prop like isAvailable and show “Available” or “Busy” with different colors.
+
+Add a hover effect on each card using CSS to improve UI.
+
