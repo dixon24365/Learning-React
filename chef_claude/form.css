@@ -1,0 +1,36 @@
+.chefClaudeForm{
+    display: flex;
+    gap: 12px;
+    margin: auto;
+    justify-content: center;
+
+}
+
+main{
+    padding: 30px 30px 10px;
+}
+
+.chefClaudeForm > input{
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    padding: 9px 13px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0, 0.10), 0px 1px 2px 0px rgba(0,0,0, 0.06);
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 400px;
+}
+
+.chefClaudeForm > button{
+    border-radius: 6px;
+    border: none;
+    background-color: #141413;
+    color: #fafaf8;
+    width: 150px;
+    font-size: 0.875rem;
+
+}
+
+.chefClaudeForm > button::before{
+   content: "+";
+   margin-right: 5px;
+}
