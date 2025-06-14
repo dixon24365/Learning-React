@@ -12,7 +12,7 @@ import AppState from './changeState'
 import StateCount from './stateCount'
 import AppTernary from './AppTernary'
 // import TeamMember from '../Solo_projects/Card_Generator/TeamMember'
-import Team from '../Solo_projects/Card_Generator/Team'
+// import Team from '../Solo_projects/Card_Generator/Team'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -24,8 +24,8 @@ createRoot(document.getElementById('root')).render(
     {/* <ChefHeader/>
     <Form/> */}
     {/* <AppState/> */}
-    {/* <StateCount/> */}
+    <StateCount/>
     {/* <AppTernary/> */}
-    <Team/>
+    {/* <Team/> */}
   </StrictMode>,
 )

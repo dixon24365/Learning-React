@@ -1,28 +1,27 @@
-import  styles from './stateCount.module.css'
-import React from "react"
+import React, { useState } from "react"
+import  './stateCount.css'
 
 export default function StateCount() {
-    let [count, setCount] = React.useState(0)
 
-    function add(){
-        return(
-            setCount(count+1)
-        )
-    }
+    const [countt, setCountt] = React.useState(0)
 
-    function minus(){
-        return(
-            setCount(prevCount=> count - 1)
-        )
+    function handleMinus(){
+         setCountt(countt-1)
     }
+    
+    function handlePlus(){
+         setCountt(countt + 1)
+    }
+    
+
     return (
         <main className="container">
-            <h1>How many times will Bob say "state" in this section?</h1>
-            <div className="counter">
-                <button onClick={minus} className="minus" aria-label="Decrease count">–</button>
-                <h2 className="count">{count}</h2>
-                <button onClick={add} className="plus" aria-label="Increase count">+</button>
-            </div>
+            <h1>How may times will Dickson say "Hi" in this section</h1>
+                <div className="counter">
+                    <button onClick={handleMinus} className='minus'>-</button>
+                    <h2 className="count">{countt}</h2>
+                    <button onClick={handlePlus} className='plus'>+</button>
+                </div>
         </main>
     )
 }
