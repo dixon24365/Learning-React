@@ -1,14 +1,20 @@
-export default function Team(){
-    return(
-        <>
-        <Team
-        name="Dixon"
-        img ='/img/felix.png'
-        />
-        <Team
-        name="Ouma"
-        img ='/fluffykins.png'
-        />
-        </>
-    )
+import TeamMember from "./TeamMember.jsx";
+import teamData from "./teamData.js";
+
+export default function Team() {
+  const teamMemberEntry = teamData.map((teamMemberr) => {
+    return (
+      <TeamMember
+        name={teamMemberr.name}
+        profilePic={teamMemberr.profilePic}
+        role={teamMemberr.role}
+        bio={teamMemberr.bio}
+      />
+    );
+  });
+  return(
+  <>
+  { teamMemberEntry }
+  </>
+  )
 }
