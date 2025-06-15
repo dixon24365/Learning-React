@@ -1,7 +1,8 @@
+import React from 'react'
 import './form.css'
 
 export default function Form(){
-    const ingredients = ['Oregano', 'Chicken', 'Tomatoes']
+    const [ingredients, setIngredients] = React.useState([])
 
     const IngredientListItems= ingredients.map(Ingredient=>(
         <li key={Ingredient}>{Ingredient}</li>
@@ -10,10 +11,9 @@ export default function Form(){
 
     function handleSubmit(event){
         event.preventDefault()
-        const formData= new formData(event.currentTarget)
+        const formData= new FormData(event.currentTarget)
         const newIngredient= formData.get('ingredient')
-
-        return console.log('Form submitted')
+        setIngredients(prevIngrdients => [...prevIngrdients, newIngredient])
     }
 
     return(
