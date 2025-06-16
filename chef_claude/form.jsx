@@ -9,16 +9,14 @@ export default function Form(){
     )
     )
 
-    function handleSubmit(event){
-        event.preventDefault()
-        const formData= new FormData(event.currentTarget)
+    function handleSubmit(formData){
         const newIngredient= formData.get('ingredient')
         setIngredients(prevIngrdients => [...prevIngrdients, newIngredient])
     }
 
     return(
         <main>
-        <form onSubmit={handleSubmit} className="chefClaudeForm" action="">
+        <form action={handleSubmit} className="chefClaudeForm">
             <input className='inputBox' type="text" placeholder="eg Eggs" name='ingredient'/>
             <button>Add Ingredient</button>
         </form>

@@ -10,18 +10,20 @@ export default function App() {
         lastName: "Doe",
         phone: "+1 (212) 555-1212",
         email: "itsmyrealname@example.com",
-        isFavorite: true
+        isFavorite: false
     })
-    /**
-     * Challenge: Fill in the values in the markup
-     * using the properties of our state object above
-     * (Ignore `isFavorite` for now)
-     */
 
     let starIcon = contact.isFavorite? starFilled :  starEmpty
  
     function toggleFavorite() {
-        console.log("Toggle Favorite")
+        setContact(prevContact=>{
+            return(
+                {
+                    ...prevContact,
+                    isFavorite: !prevContact.isFavorite
+                }
+            )
+        })
     }
 
     return (
