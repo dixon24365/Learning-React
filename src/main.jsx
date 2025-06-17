@@ -1,12 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 // import AppObject from './AppObject'
-import AppFormPractice from './AppFormPractice'
+// import AppFormPractice from './AppFormPractice'
 // // import './index.css'
 // // import AppContact from './AppContact'
 // // import AppTravel from './AppTravel'
 // // import AppTurtles from './AppTurtles'
-// // import Joke from '../Jokes/joke'
+import Joke from '../Jokes/joke'
 // import ChefHeader from '../chef_claude/header'
 // import Form from '../chef_claude/form'
 // // import AppClick from './AppClick'
@@ -23,7 +23,7 @@ createRoot(document.getElementById('root')).render(
     {/* <AppContact />  */}
     {/* <AppTravel/> */}
     {/* <AppTurtles/> */}
-    {/* <Joke/> */}
+    <Joke/>
     {/* <ChefHeader/> */}
     {/* <Form/> */}
     {/* <AppState/> */}
@@ -32,6 +32,6 @@ createRoot(document.getElementById('root')).render(
     {/* <Team/> */}
     {/* <AppArray/> */}
     {/* <AppObject/> */}
-    <AppFormPractice/>
+    {/* <AppFormPractice/> */}
   </StrictMode>,
 )
