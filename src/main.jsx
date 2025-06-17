@@ -6,9 +6,9 @@ import { createRoot } from 'react-dom/client'
 // // import AppContact from './AppContact'
 // // import AppTravel from './AppTravel'
 // // import AppTurtles from './AppTurtles'
-import Joke from '../Jokes/joke'
-// import ChefHeader from '../chef_claude/header'
-// import Form from '../chef_claude/form'
+// import Joke from '../Jokes/joke'
+import ChefHeader from '../chef_claude/header'
+import Form from '../chef_claude/form'
 // // import AppClick from './AppClick'
 // // import AppState from './changeState'
 // // import StateCount from './stateCount'
@@ -16,6 +16,7 @@ import Joke from '../Jokes/joke'
 // // import AppArray from './AppArray'
 // // import TeamMember from '../Solo_projects/Card_Generator/TeamMember'
 // // import Team from '../Solo_projects/Card_Generator/Team'
+// import AppMessages from './AppMessages'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -23,9 +24,9 @@ createRoot(document.getElementById('root')).render(
     {/* <AppContact />  */}
     {/* <AppTravel/> */}
     {/* <AppTurtles/> */}
-    <Joke/>
-    {/* <ChefHeader/> */}
-    {/* <Form/> */}
+    {/* <Joke/> */}
+    <ChefHeader/>
+    <Form/>
     {/* <AppState/> */}
     {/* <StateCount/> */}
     {/* <AppTernary/> */}
@@ -33,5 +34,6 @@ createRoot(document.getElementById('root')).render(
     {/* <AppArray/> */}
     {/* <AppObject/> */}
     {/* <AppFormPractice/> */}
+    {/* <AppMessages/> */}
   </StrictMode>,
 )
