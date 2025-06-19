@@ -4,6 +4,12 @@ import './form.css'
 export default function Form(){
     const [ingredients, setIngredients] = React.useState(["all the main spices", "pasta", "ground beef", "tomato paste"])
 
+    const [recipeShown, setRecipeShown] = React.useState(false)
+
+    function showRecipe(){
+        setRecipeShown(prevState=> !prevState)
+    }
+
     const IngredientListItems= ingredients.map(Ingredient=>(
         <li key={Ingredient}>{Ingredient}</li>
     )
@@ -29,12 +35,12 @@ export default function Form(){
                 <h3>Ready for a recipe?</h3>
                 <p>Generate a recipe from your list of ingredients.</p>
                 </div>
-                <button>Get a recipe</button>
+                <button onClick={showRecipe}>Get a recipe</button>
                 </div>
                 }
         </section>
         }
-        {<section>
+        { recipeShown && <section>
     <h2>Chef Claude Recommends:</h2>
     <article className="suggested-recipe-container" aria-live="polite">
         <p>Based on the ingredients you have available, I would recommend making a simple a delicious <strong>Beef Bolognese Pasta</strong>. Here is the recipe:</p>

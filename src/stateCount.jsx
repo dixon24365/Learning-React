@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import  './stateCount.css'
+import Count from "./Count"
 
 export default function StateCount() {
 
@@ -19,7 +20,7 @@ export default function StateCount() {
             <h1>How may times will Dickson say "Hi" in this section</h1>
                 <div className="counter">
                     <button onClick={handleMinus} className='minus'>-</button>
-                    <h2 className="count">{countt}</h2>
+                   <Count number ={countt}/>
                     <button onClick={handlePlus} className='plus'>+</button>
                 </div>
         </main>
