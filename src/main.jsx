@@ -17,7 +17,8 @@ import AppObject from './Card_practice/AppObject'
 // // import TeamMember from '../Solo_projects/Card_Generator/TeamMember'
 // // import Team from '../Solo_projects/Card_Generator/Team'
 // import AppMessages from './AppMessages'
-import AppHello from './Hello/AppHello'
+// import AppHello from './Hello/AppHello'
+import AppSound from './Sound_pads_challenge/AppSound'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -36,6 +37,7 @@ createRoot(document.getElementById('root')).render(
      {/* <AppObject/> */}
      {/* <AppFormPractice/> */}
      {/* <AppMessages/> */}
-     <AppHello/>
+    {/* <AppHello/> */}
+    <AppSound darkMode = {false}/>
   </StrictMode>,
 )
